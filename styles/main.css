@@ -1,0 +1,145 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(64, 30, 2, 0.575);
+    
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{  
+    width: 70%;
+    min-height: 35rem;
+    /*con margin left y right en auto, centro el contenido*/
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 2rem;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-bottom: 15rem;
+    box-shadow: 5px 10px 18px #363131;
+    z-index: 10;
+    background-image: url('../assets/cuaderno-copia.png');
+    /*
+    con scroll y contain, el fondo se adapta al contenido añadiendo la imagen otra vez
+    si hace falta*/
+    background-attachment: scroll;
+    background-size: contain;
+}
+section>div{
+    /*EDGE NO ACEPTA COLOR EN HEXADECIMAL*/
+    background-color: rgba(43,27,2, 0.55);
+    min-height: 35rem;
+    border-radius: 2rem;
+}
+
+section>div>h1{
+    color:var(--fontColor);
+    font-family: var(--fontType);
+    font-size: 2rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    text-align: center;
+}
+p,footer{
+    color:var(--fontColor);
+    font-family: var(--fontType);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-left: 13%;
+    padding-bottom: 3%
+}
+label{
+    color:var(--fontColor);
+    font-family: var(--fontType);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* La imagen ocupe toda la pantalla*/
+.viewport{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+article>h2{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-left:7rem;
+    color:var(--fontColor);
+}
+article>div>p{
+    padding-top:2rem;
+    padding-bottom:.5rem;
+    padding-left:7.5rem;
+}
+.video{
+    text-align: center;
+}
+video{
+    padding-bottom: 1rem;
+    border-radius: 15%;
+    
+}
+
+.inputForm{
+    width: 38%;
+    background-color:transparent;
+    border:none;
+    box-shadow: none;
+    padding: .5rem;
+    border-bottom:solid white;
+    color: var(--fontColor);
+    font-size: 1.3rem;   
+}
+span{
+    color:var(--fontColor);
+    font-family: 'Montserrat', sans-serif;
+    padding-top:2rem;
+    font-size: 1.2rem;
+  
+}
+textarea,select{
+    background-color:rgba(255, 254, 254, 0.315);
+    border-radius: 15px;
+    padding:5px;
+    color:var(--fontColor);
+    font-family: var(--fontType);
+    padding:.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.boton{
+    background-color:rgba(255, 254, 254, 0.315);
+    border-radius: 15px;
+    border:none;
+    color:var(--fontColor);
+    font-family: var(--fontType);
+    padding:.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+option{
+    color:black;
+    cursor: pointer;
+}
+.textarea-hide{
+    display:none;
+}
+footer{
+    background-color: rgba(0,0,0,0.5);
+}
+address{
+    padding:3rem;
+}
+

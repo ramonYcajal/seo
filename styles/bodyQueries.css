@@ -1,0 +1,58 @@
+/* MÓVIL EN VERTICAL*/
+@media screen and (max-width: 600px) and (orientation: portrait){
+    section {
+        width: 90%;
+        min-height: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        border-radius: 2rem;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin-bottom: 15rem;
+        box-shadow: 5px 10px 18px #363131;
+        z-index: 10;
+        background-image: url(../assets/cuaderno-copia.png);
+        background-attachment: scroll;
+        background-size: contain;
+    }
+    option{
+        font-size: 1rem;
+    }
+    body{
+        width: 164%;
+    }
+    video{
+     
+        width: 70%;
+    }
+    
+    }
+    
+    /*MÓVIL APAISADO*/
+    @media screen and (max-width: 640px) and (orientation: landscape){
+        body{
+            width: 111%;
+        }
+    
+    
+        section {
+            width: 90%;
+            min-height: 35rem;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            border-radius: 2rem;
+            position: relative;
+            right: 0;
+            left: 0;
+            margin-bottom: 15rem;
+            box-shadow: 5px 10px 18px #363131;
+            z-index: 10;
+            background-image: url(../assets/cuaderno-copia.png);
+            background-attachment: scroll;
+            background-size: contain;
+        }
+    
+    }

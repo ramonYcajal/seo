@@ -1,0 +1,102 @@
+/* LATERAL MENU START*/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    transition:transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    background-color: rgba(168, 139, 139, 0.7);
+    font-size: 1.4rem;
+    z-index: 1000;   
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: azure;
+    cursor: pointer;  
+    font-weight: bold; 
+}
+
+nav li{
+    list-style: none;
+    padding:1rem;
+    transition:background-color .2s;
+    text-align: center;  
+}
+nav li:hover{
+    background-color:rgba(158, 56, 56, 0.945);  
+}
+
+.menu-hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    transition:transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    background-color: rgba(168, 139, 139, 0.7);
+    font-size: 1.4rem;
+    z-index: 100;
+    transform: translate(-100%);
+}
+
+.img-menu{
+    height: 4rem;
+    width: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    cursor: pointer;
+    position: absolute;
+    right:5%;
+    
+}
+.img-menu-hidden{
+    height: 4rem;
+    width: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    cursor: pointer;
+    position: absolute;
+    right:-25%;
+}
+/*Posicionar la etiqueta figure del menú lateral*/
+.my-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Aumento de la imagen dentro del menú*/
+.me:hover{
+    transform: scale(2,2);
+}
+
+.me{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border-radius: 100%;  
+    transition:all .1s;
+    cursor: pointer;
+}
+
+.table{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.table>li{
+    padding-bottom: .5rem
+}
+
+.activo{
+    color:black;
+    font-size: 2.5rem;
+}
+/* LATERAL MENU END*/
+
